@@ -1,0 +1,1 @@
+window.alert("Witaj w symulacji procesora.")

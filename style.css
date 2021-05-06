@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #222;
+}
+.container{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    right: 300px;
+    background-color: #006064;
+    height: 600px;
+    width: auto;
+    /* border-radius: 20px; */
+}
+label{
+    padding: 15px;
+    font-size: x-large;
+}
+h2{
+    text-align: center;
+    padding: 6px;
+}
+.inputs-text{
+    text-align: left;
+}
+.inputs-text div{    
+    padding: 20px;
+    background-color: #00838f;
+}
+.inputs-text input{
+    text-align: center;
+    width: 100px;
+    height: 25px;
+}
+.inputs-radio div{
+    padding: 20px;
+    height: max-content;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 1fr;
+}
