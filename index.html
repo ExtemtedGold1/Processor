@@ -6,40 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="processor.png">
-    <script src="script.js"></script>
     <title>Processor</title>
 </head>
 <body>
     <div class="blure">
         <div class="container">
-            <form action="" method="GET">
+            <form action="/" method="GET" id="form">
                 <div class="inputs-text">
                     <h2>Symulacja procesora intel 8086</h2>
-                    <div><label for="AX">AX</label><input type="text" name="AX" id="AX" style="text-transform:uppercase"></div>
-                    <div><label for="BX">BX</label><input type="text" name="BX" id="BX" style="text-transform:uppercase"></div>
+                    <div><label for="AX">AX</label><input type="text" name="AX" id="AX" style="text-transform:uppercase" maxlength="4" required></div>
+                    <div><label for="BX">BX</label><input type="text" name="BX" id="BX" style="text-transform:uppercase" maxlength="4" required></div>
                     <div><label for="CX">CX</label><input type="text" name="CX" id="CX" style="text-transform:uppercase"></div>
                     <div><label for="DX">DX</label><input type="text" name="DX" id="DX" style="text-transform:uppercase"></div>
                 </div>
                 <div class="grid">
                     <div class="inputs-radio">
-                        <div><input type="radio" name="" id=""><label for="AX">AX</label></div>
-                        <div><input type="radio" name="" id=""><label for="BX">BX</label></div>
-                        <div><input type="radio" name="" id=""><label for="CX">CX</label></div>
-                        <div><input type="radio" name="" id=""><label for="BX">DX</label></div>
+                        <div><input type="radio" name="orders" id="AXchk" value="AX"><label>AX</label></div>
+                        <div><input type="radio" name="orders" id="BXchk" value="BX"><label>BX</label></div>
+                        <div><input type="radio" name="orders" id="CXchk" value="CX"><label>CX</label></div>
+                        <div><input type="radio" name="orders" id="DXchk" value="DX"><label>DX</label></div>
                     </div>
                     <div class="inputs-radio">
-                        <div><input type="radio" name="" id=""><label for="AX">AX</label></div>
-                        <div><input type="radio" name="" id=""><label for="BX">BX</label></div>
-                        <div><input type="radio" name="" id=""><label for="CX">CX</label></div>
-                        <div><input type="radio" name="" id=""><label for="BX">DX</label></div>
+                        <div><input type="radio" name="orders2" id="AXchk2" value="AX"><label>AX</label></div>
+                        <div><input type="radio" name="orders2" id="BXchk2" value="BX"><label>BX</label></div>
+                        <div><input type="radio" name="orders2" id="CXchk2" value="CX"><label>CX</label></div>
+                        <div><input type="radio" name="orders2" id="DXchk2" value="DX"><label>DX</label></div>
                     </div>
-                    <div class="inputs-radio">
-                        <output>wynik</output>
-                        <output>wynik</output>
+                    <div class="inputs-radio wynik">
+                        <div id="wynik"></div>
+                           <div class="wynik-child">
+                            <select class="select">
+                                <option value="move" id="move">Move</option>
+                            </select>
+                        <input type="submit" value="Wynik" id="submit">
+                           </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
+    <script defer src="script.js"></script>
 </body>
 </html>
