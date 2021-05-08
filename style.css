@@ -50,7 +50,13 @@ h2{
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: 1fr;
 }
-#submit{
+#wynik , #wynik2{
+    background-color: #028d92;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+#submit , #button-submit{
     padding: 8px 12px;
     color: #fff;
     background-color: #222;
@@ -58,6 +64,9 @@ h2{
     font-size: 1.5rem;
     cursor: pointer;
     border-radius: 5px;
+}
+.wynik-child{
+    width: 100%;
 }
 .select{
     padding: 8px 12px;

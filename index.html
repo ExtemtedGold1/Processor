@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="processor.png">
+    <script defer src="script.js"></script>
     <title>Processor</title>
 </head>
 <body>
@@ -34,17 +35,18 @@
                     </div>
                     <div class="inputs-radio wynik">
                         <div id="wynik"></div>
+                        <div id="wynik2"></div>
                            <div class="wynik-child">
                             <select class="select">
                                 <option value="move" id="move">Move</option>
                             </select>
-                        <input type="submit" value="Wynik" id="submit">
+                        <button id="button-submit" onclick="formsumbit(); return false;">Wynik</button>
+                        <!--<input type="submit" value="Wynik" id="submit">-->
                            </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
-    <script defer src="script.js"></script>
 </body>
 </html>
