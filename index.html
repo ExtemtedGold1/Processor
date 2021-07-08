@@ -12,13 +12,13 @@
 <body>
     <div class="blure">
         <div class="container">
-            <form action="/" method="GET" id="form">
+            <form action="/" method="GET" id="form" onsubmit="return formsumbit()" name="myform">
                 <div class="inputs-text">
                     <h2>Symulacja procesora intel 8086</h2>
-                    <div><label for="AX">AX</label><input type="text" name="AX" id="AX" style="text-transform:uppercase" maxlength="4" required></div>
-                    <div><label for="BX">BX</label><input type="text" name="BX" id="BX" style="text-transform:uppercase" maxlength="4" required></div>
-                    <div><label for="CX">CX</label><input type="text" name="CX" id="CX" style="text-transform:uppercase"></div>
-                    <div><label for="DX">DX</label><input type="text" name="DX" id="DX" style="text-transform:uppercase"></div>
+                    <div><label for="AX">AX</label><input type="text" name="AX" id="AX" style="text-transform:uppercase" maxlength="4"></div>
+                    <div><label for="BX">BX</label><input type="text" name="BX" id="BX" style="text-transform:uppercase" maxlength="4"></div>
+                    <div><label for="CX">CX</label><input type="text" name="CX" id="CX" style="text-transform:uppercase" maxlength="4"></div>
+                    <div><label for="DX">DX</label><input type="text" name="DX" id="DX" style="text-transform:uppercase" maxlength="4"></div>
                 </div>
                 <div class="grid">
                     <div class="inputs-radio">
@@ -34,14 +34,24 @@
                         <div><input type="radio" name="orders2" id="DXchk2" value="DX"><label>DX</label></div>
                     </div>
                     <div class="inputs-radio wynik">
-                        <div id="wynik"></div>
-                        <div id="wynik2"></div>
+                        <div>
+                            <div id="wynik"></div>
+                            <div id="wynik2"></div>
+                            <input type="reset" onclick="resetuj(); return false;" id="reset">
+                        </div>
                            <div class="wynik-child">
                             <select class="select">
                                 <option value="move" id="move">Move</option>
+                                <option value="change" id="change">Change</option>
                             </select>
-                        <button id="button-submit" onclick="formsumbit(); return false;">Wynik</button>
-                        <!--<input type="submit" value="Wynik" id="submit">-->
+                                <!--<button id="button-submit" onclick="formsumbit(); return false;">Wynik</button>-->
+                            <input type="submit" value="Wynik" id="submit">
+                            <div id="wyniki">
+                                <div id="wyswietlWynik"> </div>
+                                <div id="wyswietlWynik2"> </div>
+                                <div id="wyswietlWynik3"> </div>
+                                <div id="wyswietlWynik4"> </div>
+                            </div>
                            </div>
                     </div>
                 </div>
